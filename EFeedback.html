@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Enter Feedback</title>
+<style>
+table, th{
+  border: 1px solid black;
+}
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+background: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ padding-top: 7px;
+ margin-left: 10em;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+
+}
+.nav-collapse {
+  margin-left: 1em;
+
+}
+pre
+{
+font-family:verdana;
+font-size:14;
+color:blue;
+}
+</style>
+<script>
+function validateEmail()  
+{  
+var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+}  
+</script>
+</head>
+<body background="road.jpg">
+<div class="header">
+<h1>Travel Line</h1>
+  <img src="images\bus.jpg" alt="bus" style="width:850px;height:220px;>
+</div>
+<div class="nav-collapse">
+
+<div class="topnav">
+<a href="Bus_Home.html">Home</a>
+<a href="ContactUs.html">Contact Us</a>
+<a href="retrival1.html">Retrieval</a>
+<a href="Admin_login.html">Admin Login</a>
+</div>
+</div>
+<div align="center" ><br>
+
+<h3>Enter Feedback</h3>
+<form name="myform"  method="post" action="Bus_Home.html" onsubmit="return validateEmail();"> 
+<pre>
+passenger id : <input type="number"min="1" name="passenger id" required="required"><br>
+         E-mail: <input type="text" name="email"required="required"><br>
+    comment:<textarea rows="4"required="required"></textarea><br>
+</pre><br>
+<button type="submit"  value="submit" >submit</button>
+<button type="reset"  value="reset">reset</button><br>
+</form>
+</div>
+</body>
+</html>

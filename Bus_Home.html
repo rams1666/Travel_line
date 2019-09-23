@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Travel Line</title>
+<style>
+button[type=submit], button[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+background: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ padding-top: 10px;
+ margin-left: 10em;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+
+}
+.nav-collapse {
+  margin-left: 1em;
+
+}
+</style>
+</head>
+<body >
+<div class="header">
+<h1>Travel Line</h1>
+  <img src="images\bus.jpg" alt="bus" style="width:850px;height:220px;>
+</div>
+<div class="nav-collapse">
+
+<div class="topnav">
+
+<a href="Bus_Home.html">Home</a>
+<a href="ContactUs.html">Contact Us</a>
+<a href="retrival1.html">Retrival</a>
+<a href="Admin_login.html">Admin Login</a>
+</div>
+</div>
+<div align="center"><br>
+
+<h3>Searching for bus</h3>
+<form action="Select_service.jsp" method="post">
+From:<input type="text" id="form" name="from" required="required">
+To:      <input type="text" id="to" name="to" required="required">
+Date:<input type="date" id="date" name="jdate" required="required">
+<button type="submit"  value="submit">submit</button>
+<button type="reset"  value="reset">reset</button><br>
+</form>
+</div>
+</body>
+</html>

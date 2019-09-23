@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Service</title>
+<style>
+table, th{
+  border: 1px solid black;
+}
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+background: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ padding-top: 10px;
+ margin-left: 8em;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+
+}
+.nav-collapse {
+  margin-left: 1em;
+
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Travel Line</h1>
+  <img src="images/bus.jpg" alt="bus" style="width:1000px;height:300px;>
+</div>
+<div class="nav-collapse">
+
+<div class="topnav">
+<a href="Modify_Service.html">Modify Service</a>
+<a href="Feedback.html">View Feeedback</a>
+<a href="Schedule.html">Schedule</a>
+<a href="Bus_Home.html">Logout</a>
+
+<!-- <a href="Schedule.html">Schedules</a> --> 
+
+</div>
+<div align="center" style="border-style: solid;" ><br>
+
+<h3>Add Service</h3>
+
+<form id="add_service_form" method="post" name="myform" action="#">
+From:<select>
+<option>Hyderabad</option>
+<option>Tuni</option>
+<option>kakinada</option>
+<option>Vizag</option>
+</select><br>
+To:<select>
+<option>Hyderabad</option>
+<option>Tuni</option>
+<option>kakinada</option>
+<option>Vizag</option>
+</select><br>
+Type:<select>
+<option>A/C Bus</option>
+<option>Non A/C bus</option>
+</select><br>
+Fare:<input type="text" name="fare" required="required"><br>
+Distance(kms):<input type="text" name="distance" required="required"><br>
+Departure Time(hrs):<input type="time" name="depatureTime" required="required"><br>
+Journey Time(hrs):<input type="number" ><br>
+Service No:<input type="text" name="serviceno" required="required"><br>
+<button type="button"  value="submit"  id="submit">submit</button>
+<button type="reset"  value="reset">reset</button><br>
+<button onclick="location.href = 'Admin.html';" id="myButton" name="">back</button>
+
+</form>
+
+</div>
+</body>
+</html>
